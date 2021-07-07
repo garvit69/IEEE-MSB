@@ -1,0 +1,123 @@
+body {
+    overflow-x: hidden;
+}
+
+#navbar::before {
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar {
+    position: sticky;
+}
+
+#navbar .mainMenu {
+    height: 35vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    transition: top 1s ease;
+    display: none;
+}
+
+#navbar .mainMenu .closeMenu img {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.openMenu img {
+    margin-top: 10px;
+    display: block;
+}
+
+#navlogo img {
+    margin: 10px;
+    width: 60px;
+    transition: 0.3s ease-in;
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+    padding: 13px 7px;
+}
+
+#logo img {
+    width: 300px;
+}
+
+#home {
+    height: 690px;
+    padding: 45px 40px;
+    text-align: center;
+}
+
+#home::before {
+    height: 640px;
+}
+
+#home p {
+    font-size: 15px;
+}
+
+#events {
+    flex-direction: column;
+}
+
+#events .box {
+    width: 77%;
+    margin-top: 40px;
+    margin-left: 26px;
+    height: 600px;
+}
+
+#events img {
+    width: 200px;
+}
+
+#samwad img {
+    width: 130px;
+}
+
+#sceecs img {
+    width: 150px;
+}
+
+#sponsorlogo {
+    flex-wrap: wrap;
+}
+
+#sponsorlogo img {
+    width: 130px;
+    height: 60px;
+}
+
+#contactbox form {
+    width: 80%;
+}
+
+#sponsors h1 {
+    font-size: 75px;
+}
+
+#contact h1 {
+    font-size: 90px;
+}
+
+#contact #btn {
+    width: 200px;
+}

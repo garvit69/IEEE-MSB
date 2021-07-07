@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#navbar::before {
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar {
+    z-index: 100;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    align-self: flex-start;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+#navlogo {
+    margin: 15px;
+}
+
+.openMenu img {
+    width: 60px;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.closeMenu img {
+    filter: grayscale(1);
+    width: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+#navlogo img {
+    margin: 0px 30px;
+    width: 120px;
+    transition: 0.3s ease-in;
+}
+
+#navlogo img:hover {
+    transform: scale(1.2);
+}
+
+#navbar ul {
+    display: flex;
+    align-content: space-between;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#logo img {
+    width: 500px;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    color: #2bd4c6;
+    transition: color 0.2s ease-in;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: rgb(247, 8, 8);
+}
+
+#home {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    padding-top: 12px;
+    width: auto;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: grey;
+    padding: 14px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#events {
+    display: flex;
+    margin: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    flex-wrap: wrap;
+}
+
+#events h2 {
+    color: #2bd4c6;
+    font-family: 'Lato';
+    font-weight: bolder;
+}
+
+#events .box {
+    border: 2px solid rgb(255, 255, 255);
+    width: 33%;
+    height: 500px;
+    text-align: center;
+    margin: 40px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+#events .box:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.034);
+    border-radius: 30px;
+}
+
+#events p {
+    color: white;
+    font-family: "Lato";
+    font-weight: bolder;
+    margin: 20px;
+}
+
+#events img {
+    width: 300px;
+    margin: 40px;
+    display: block;
+    margin: auto;
+}
+
+#samwad img {
+    width: 180px;
+}
+
+#sceecs img {
+    width: 220px;
+}
+
+#sponsors {
+    margin-top: 80px;
+    position: relative;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+#sponsorlogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#sponsorlogo img {
+    height: 124px;
+    margin: 30px;
+}
+
+#sponsors::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+#sponsors h1 {
+    color: #ff1f4f;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+
+#contact h1 {
+    color: #2bd4c6;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.445);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact #btn {
+    color: black;
+    border: 2px solid #2bd4c6;
+    font-size: 20px;
+    background-color: #2bd4c6af;
+    padding: 5px 35px;
+    margin-top: 20px;
+    font-family: 'Lato';
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 300px;
+    text-align: center;
+}
+
+.contactbox input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contactbox textarea {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 2px solid gray;
+    background-color: transparent;
+    color: black;
+}
+
+.contactbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contactbox form {
+    width: 40%;
+}
+
+.contactbox form label {
+    width: 40%;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+#contact #btn:hover {
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    color: white;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    ;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.815);
+    color: rgba(255, 255, 255, 0.562);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials img {
+    width: 40px;
+    filter: grayscale(0.7);
+    margin: 5px 15px;
+    transition: 0.3s;
+}
+
+.socials img:hover {
+    filter: grayscale(0);
+}
+
+#responses::before {
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#responses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#responses .responsebutton {
+    padding: 15px 25px;
+    font-size: 15px;
+    margin: 30px;
+    width: 190px;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    color: white;
+    border: transparent;
+    font-family: 'Lato';
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: width 0.5s;
+}
+
+#responses .responsebutton img {
+    width: 40px;
+    display: none;
+}
+
+#responses .responsebutton:hover img {
+    display: inline-block;
+}
+
+#responses .responsebutton:hover {
+    width: 210px;
+}
+
+label.validation-error {
+    color: red;
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+#show {
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+    color: grey;
+    display: none;
+}
+
+#show td,
+#show th {
+    text-align: center;
+    padding: 10px 40px;
+}
+
+#show td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+#show thead th {
+    color: #ffffff;
+    background: rgba(128, 128, 128, 0.616);
+}
+
+#show thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #2bd4c6;
+}
+
+#show tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+@media (max-width: 800px) {
+    #show {
+        display: block;
+        width: 100%;
+    }
+    .tab:before {
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    #show thead,
+    #show tbody,
+    #show thead th {
+        display: block;
+    }
+    #show thead th:last-child {
+        border-bottom: none;
+    }
+    #show thead {
+        float: left;
+    }
+    #show tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    #show td,
+    #show th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    #show thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    #show tbody tr {
+        display: table-cell;
+    }
+    #show tbody tr:nth-child(odd) {
+        background: none;
+    }
+    #show tr:nth-child(even) {
+        background: transparent;
+    }
+    #show tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    #show tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    #show tbody td {
+        display: block;
+        text-align: center;
+    }
+}
